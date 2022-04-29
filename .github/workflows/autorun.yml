@@ -1,0 +1,24 @@
+name: Deploy
+
+on:
+  schedule:
+    - cron: "0 * * * *"
+  workflow_dispatch:
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@master
+      - uses: actions/setup-python@v3
+        with:
+          python-version: "3.9"
+      - name: Run codes
+        shell: bash
+        run: |
+          pip install workalendar
+          python cn.py
+      - name: Deploy
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: "autobuild"
