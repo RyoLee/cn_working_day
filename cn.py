@@ -11,5 +11,5 @@ if __name__ == "__main__":
     for i in range(30):
         cur += timedelta(days=1)
         res[str(cur)] = cal.is_working_day(cur)
-    with open('cn.json', 'w') as json_file:
+    with open('public/cn.json', 'w') as json_file:
         json.dump(res, json_file, indent=4, sort_keys=True)
