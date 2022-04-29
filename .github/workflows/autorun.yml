@@ -19,10 +19,6 @@ jobs:
           pip install workalendar
           python cn.py
       - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
+        uses: stefanzweifel/git-auto-commit-action@v4
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./public
-          user_name: "github-actions[bot]"
-          user_email: "github-actions[bot]@users.noreply.github.com"
-          full_commit_message: Deploy from ${{ github.repository }}@${{ github.sha }}
+          commit_message: "autobuild"
