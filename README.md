@@ -3,7 +3,7 @@
 
 使用Github action自动更新
 
-可用于iOS工作日闹钟[快捷指令-工作日闹钟](https://www.icloud.com/shortcuts/7deacfae183848d2ad2a9047a7329aa1)
+可用于iOS工作日闹钟[快捷指令-工作日闹钟](https://www.icloud.com/shortcuts/20c84b95071d4ac489f59dc8307ba279)
 
 使用该快捷指令需配置2个闹钟,分别对应工作日和休息日,再编辑快捷指令找到如下部分
 - [打开]闹钟"工作日"
