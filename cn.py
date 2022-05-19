@@ -6,7 +6,7 @@ from datetime import timedelta, date
 import json
 if __name__ == "__main__":
     cal = China()
-    cur = date.today() - timedelta(days=2)
+    cur = date.today() - timedelta(days=3)
     res = {}
     for i in range(30):
         cur += timedelta(days=1)
