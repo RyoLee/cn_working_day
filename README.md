@@ -1,5 +1,5 @@
 # cn_working_day
-基于[workalendar](https://github.com/workalendar/workalendar) 生成近30天工作日信息
+基于[workalendar](https://github.com/workalendar/workalendar) 生成近30天(-2~+27)工作日信息
 
 使用Github action自动更新
 
