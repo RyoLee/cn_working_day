@@ -29,7 +29,11 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
           keep_files: true
-      - name: Deploy
+      - name: Deploy master branch
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
           commit_message: "autobuild"
+      - name: Purge CDN cache
+        shell: bash
+        run: |
+          curl https://purge.jsdelivr.net/gh/RyoLee/cn_working_day@gh-pages/cn.json

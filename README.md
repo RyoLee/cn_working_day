@@ -9,4 +9,8 @@
 
 ## 注意
 
-本项目将于2023年01月01日后(即2日起)停止在主分支进行cn.json更新并移除该文件，转为仅使用github page(对应gh-pages分支)更新，请及时调整快捷指令中的URL
+本项目将于2023年01月01日后(即2日起)停止在主分支进行cn.json更新并移除该文件，转为仅使用github page(对应gh-pages分支)更新，请及时调整快捷指令中的URL，以jsdelivr为例，新URL如下
+
+```
+https://cdn.jsdelivr.net/gh/RyoLee/cn_working_day@gh-pages/cn.json
+```
