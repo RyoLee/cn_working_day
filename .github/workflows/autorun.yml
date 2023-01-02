@@ -22,17 +22,13 @@ jobs:
         run: |
           rm -rf public
           mkdir -p public
-          cp cn.json public/
+          mv cn.json public/
       - name: Deploy github pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
           keep_files: true
-      - name: Deploy master branch
-        uses: stefanzweifel/git-auto-commit-action@v4
-        with:
-          commit_message: "autobuild"
       - name: Purge CDN cache
         shell: bash
         run: |
