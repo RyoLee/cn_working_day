@@ -5,7 +5,7 @@
 
 可用于iOS快捷指令工作日闹钟
 
-详细见博客[说明文章](https://blog.xn--7ovq92diups1e.com/post/homelab-cn-working-clock)
+详细见博客[说明文章](https://blog.9-ch.com/post/homelab-cn-working-clock)
 
 ## 注意
 
